@@ -1,0 +1,448 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+:root {
+  width: 100%;
+  height: 100%;
+}
+
+html {
+  width: 100%;
+  height: 100%;
+}
+body {
+  background-color: rgb(239, 239, 239);
+  width: 100vw;
+  box-sizing: border-box;
+  height: 100vh;
+  position: relative;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 1rem;
+  overflow-x: hidden;
+}
+
+.zuri {
+  justify-content: left;
+}
+.main-nav {
+  height: 4rem;
+  width: 100vw;
+  background-color: white;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  z-index: 1;
+  font-size: 0.8rem;
+  font-weight: bold;
+  position: fixed;
+}
+.main-nav ul {
+  display: flex;
+  flex-direction: row;
+}
+.main-nav ul li {
+  padding: 0 0.8rem;
+}
+a {
+  color: #3d4451;
+  text-decoration: none;
+}
+ul {
+  list-style: none;
+}
+.main-nav ul li {
+  padding: 0 0.8rem;
+}
+
+.main-nav ul.main-menu {
+  flex: 1;
+  margin-left: 1.2rem;
+}
+.main-nav ul li a {
+  border-bottom: 3rem;
+}
+.main-nav ul li a:hover {
+  border-bottom: 2px solid #07cb79;
+}
+.myBackground {
+  width: 100vw;
+  height: 55vh;
+  background-color: #3d4451;
+}
+
+/* ABOUT */
+#about {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 0.8rem;
+  width: 70vw;
+  margin: auto;
+  margin-top: -35vh;
+  background-color: white;
+  justify-content: space-evenly;
+}
+
+.my-picture {
+  width: 15rem;
+  margin-top: 2rem;
+  margin-left: 2rem;
+}
+#profilePicture {
+  width: 100%;
+}
+
+.myCard {
+  margin-top: 2rem;
+}
+
+header {
+  border-bottom: 1px solid #3d4451;
+  width: 80%;
+}
+
+@media (max-width: 400px) {
+  header {
+    margin: 0px auto;
+  }
+}
+
+h1 {
+  font-size: 2rem;
+  font-weight: 500;
+}
+#jobTitle {
+  font-size: 1.5rem;
+  font-weight: 350;
+  margin-bottom: 1.5rem;
+}
+
+.cardDetails {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+}
+
+.cardInfo1 {
+  /* border: 2px solid green; */
+  line-height: 1.8rem;
+  font-weight: 500;
+  padding-left: 20px;
+}
+.cardInfo2 {
+  line-height: 1.8rem;
+  opacity: 0.9;
+  font-size: 0.8rem;
+  font-style: italic;
+  font-weight: light;
+}
+
+.socialMedia {
+  width: 70vw;
+  margin: auto;
+  height: 4rem;
+  background-color: #07cb79;
+}
+
+.media-link {
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: white;
+}
+.fab {
+  color: white;
+  margin-top: 1.5rem;
+  margin-right: 2rem;
+}
+
+@media (max-width: 1001px) {
+  #about {
+    display: flex;
+    flex-direction: column;
+    width: 90vw;
+  }
+  .my-picture {
+    margin-top: -5vw;
+    margin-left: auto;
+    margin-right: auto;
+    width: 9rem;
+  }
+  .myCard {
+    margin-left: 3rem;
+    margin-top: 0.3rem;
+  }
+  h1 {
+    font-size: 1.8rem;
+  }
+  .cardDetails {
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+  }
+  .socialMedia {
+    width: 90vw;
+    margin: auto;
+  }
+  .myBio {
+    max-width: 80vw;
+    width: 100%;
+    font-size: 1.3rem;
+    margin: auto;
+    font-weight: 350;
+    line-height: 2.5rem;
+    margin-top: 2.5rem;
+  }
+}
+
+@media (max-width: 500px) {
+  .myCard {
+    margin: 0px auto;
+  }
+}
+
+@media (max-width: 460px) {
+  .main-nav {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 10rem;
+  }
+  .main-nav ul {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 2.5rem;
+  }
+  .zuri {
+    margin-top: 1rem;
+    margin-right: 10rem;
+  }
+  #about {
+    margin-top: -10rem;
+  }
+}
+@media (max-width: 320px) {
+  #about {
+    margin-top: -7rem;
+  }
+}
+
+.auto {
+  width: 10rem;
+  margin: auto;
+  margin-top: 3rem;
+}
+#print {
+  padding: 1rem;
+  margin: auto;
+  width: 10rem;
+  background-color: rgb(239, 239, 239);
+  border: 1px solid #3d4451;
+  font-weight: bold;
+}
+#print:hover {
+  color: #07cb79;
+}
+
+.myBio {
+  width: 60vw;
+  font-size: 1.3rem;
+  margin: auto;
+  font-weight: 350;
+  line-height: 2.5rem;
+  margin-top: 2.5rem;
+}
+
+#skills {
+  max-width: 70vw;
+  margin: auto;
+}
+.sectionTitle {
+  padding: 1rem;
+  margin: auto;
+  font-size: 1.5rem;
+  font-weight: bolder;
+  margin-top: 2.5rem;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.techStack {
+  position: relative;
+  background-color: white;
+  padding: 2rem;
+  box-shadow: 0px 0px 4px 1px rgba(110, 98, 98, 0.47);
+}
+.progressParagraph {
+  position: relative;
+  margin-top: 1.5rem;
+}
+span {
+  position: absolute;
+  display: inline-flex;
+  right: 0px;
+}
+.meter {
+  height: 10px;
+  position: relative;
+  background: rgb(239, 239, 239);
+  border-radius: 25px;
+  padding: 2px;
+}
+
+.meter > span {
+  display: block;
+  height: 100%;
+  border-top-right-radius: 8px;
+  border-bottom-right-radius: 8px;
+  border-top-left-radius: 20px;
+  border-bottom-left-radius: 20px;
+  background-color: #07cb79;
+  position: relative;
+}
+
+/* MY EXPERIENCE */
+article {
+  background: linear-gradient(-135deg, transparent 1.5em, #07cb79 0);
+  width: 50vw;
+  margin: auto;
+  position: relative;
+  border-radius: 5px;
+  color: white;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin-top: 2rem;
+  padding: 10px;
+}
+article::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  display: inline-block;
+  box-shadow: -4px 3px 3px #07cb79;
+  border-bottom-left-radius: 5px;
+}
+
+.myExperience::after {
+  width: 2.13rem;
+  height: 2.13rem;
+  background: linear-gradient(-135deg, transparent 1.5em, white 0);
+}
+h2 {
+  color: #3d4451;
+  line-height: 2.5rem;
+  font-weight: bolder;
+}
+h3 {
+  font-weight: bold;
+  line-height: 2.5rem;
+  opacity: 0.9;
+}
+.role {
+  line-height: 2rem;
+  font-weight: 450;
+  opacity: 0.7;
+  margin-bottom: 1rem;
+}
+
+/* MY EDUCATION */
+#education {
+  min-height: 80vh;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 3rem;
+  max-width: 70vw;
+  width: 100%;
+  margin: 0 auto;
+  margin-top: 3rem;
+}
+
+.myEducation {
+  background: white;
+  padding: 2rem;
+  border-top: 4px solid #07cb79;
+  box-shadow: 0px 0px 4px 1px rgba(110, 98, 98, 0.47);
+}
+.date {
+  font-size: 0.8rem;
+  background: #07cb79;
+  color: white;
+  opacity: 0.9;
+  border-radius: 4px;
+  margin: auto;
+  text-align: center;
+}
+
+.school {
+  margin-top: 1.5rem;
+  color: #3d4451;
+  line-height: 2.5rem;
+  font-weight: bolder;
+}
+
+#interest {
+  width: 70vw;
+  margin: auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  text-align: center;
+}
+
+#contact {
+  width: 100%;
+  height: 10rem;
+  background: #07cb79;
+  color: white;
+}
+
+footer {
+  position: relative;
+}
+
+footer > ul > li {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin-top: 1rem;
+}
+
+.copyRight {
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+@media (max-width: 1000px) {
+  #education {
+    display: flex;
+    flex-direction: column;
+  }
+}
+@media (max-width: 465px) {
+  .myEducation {
+    padding: 1rem;
+    width: 100%;
+  }
+  #education {
+    max-width: 90vw;
+    width: 100%;
+    margin: 0 auto;
+  }
+}
+@media (max-width: 465px) {
+  article {
+    width: 80vw;
+    padding: 10px;
+  }
+  .role {
+    text-align: start;
+  }
+}
